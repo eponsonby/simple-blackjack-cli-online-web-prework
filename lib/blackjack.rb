@@ -50,5 +50,9 @@ end
 #####################################################
 
 def runner
-  # code runner here
+  welcome
+  initial_round = deal_card + deal_card
+  until 
+  hit?
+
 end
