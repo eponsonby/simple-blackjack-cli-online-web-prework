@@ -52,7 +52,6 @@ end
 def runner
   welcome
   initial_round = deal_card + deal_card
-  until 
+  until card_total = 21
   hit?
-
 end
