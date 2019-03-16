@@ -30,6 +30,15 @@ end
 
 def hit?
   prompt_user
+  user_input = get_user_input
+  if user_input == "S" || user_input == "s"
+    return display_card_total(current_card_total)
+  elsif user_input == "h" || user_input == "h"
+    deal_card
+    return display_card_total(current_card_total)
+  elsif user_input != "s" || user_input != "h"
+    invalid_command
+    prompt_user
 end
 
 def invalid_command
